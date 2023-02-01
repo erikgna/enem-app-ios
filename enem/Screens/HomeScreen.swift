@@ -7,21 +7,43 @@
 
 import SwiftUI
 
-func teste(){
-    print("teste")
-}
-
 struct HomeScreen: View {
+    private var yearsFirst = ["2011", "2013", "2015", "2017", "2019",  "2022"]
+    private var yearsSecond = ["2012", "2014", "2016", "2018",  "2020"]
+    
     var body: some View {
-        ZStack {
+        ScrollView {
             VStack(alignment: .leading){
                 Logo()
-                Text("Treine para o ENEM com centenas das questões passadas nos últimos anos, e veja seu histórico de acertos e erros.").foregroundColor(.white).padding(.vertical, 16)
-                PrimaryButton(text: "Entrar na conta", action: {}).padding(.bottom, 6)
-                SecondaryButton(text: "Criar nova conta", action: {})
-                Button(action: {}){
-                    Text("Entrar de forma anonima").frame(maxWidth: .infinity).foregroundColor(.white).fontWeight(.semibold).font(.system(size: 18)).underline()
+                Text("Selecione as áreas desejadas").foregroundColor(.white).fontWeight(.medium).padding(.vertical, 12).font(.system(size: 20))
+                VStack{
+                    AreaCard(title: "Ciências Humanas \ne suas Tecnologias")
+                    AreaCard(title: "Matemática e suas\nTecnologias")
+                    AreaCard(title: "Ciências da Natureza\ne suas Tecnologias")
+                    AreaCard(title: "Linguagens, Códigos\ne suas Tecnologias")
                 }
+                Text("Selecione os anos desejados").foregroundColor(.white).fontWeight(.medium).padding(.vertical, 16).font(.system(size: 20))
+                HStack(alignment: .top){
+                    VStack{
+                        ForEach(yearsFirst, id: \.self) {year in
+                            HStack{
+                                CheckBox()
+                                Text(year).foregroundColor(.white).fontWeight(.semibold).padding(.leading, 8)
+                            }
+                        }
+                    }
+                    VStack{
+                        ForEach(yearsSecond, id: \.self) {year in
+                            HStack{
+                                CheckBox()
+                                Text(year).foregroundColor(.white).fontWeight(.semibold).padding(.leading, 8)
+                            }
+                        }
+                    }.padding(.leading, 16)
+                }.padding(.bottom, 24)
+                PrimaryButton(text: "Gerar Perguntas", action: {}).padding(.bottom, 8)
+                SecondaryButton(text: "Gerar Perguntas Aleatoriamente", action: {})
+                
             }.padding().frame(maxHeight: .infinity)
         }.background(Color.darkBlue)
     }

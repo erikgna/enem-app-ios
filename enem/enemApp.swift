@@ -11,7 +11,7 @@ import SwiftUI
 struct enemApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            ContentView()
         }
     }
 }
