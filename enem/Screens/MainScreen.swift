@@ -13,10 +13,10 @@ struct MainScreen: View {
     var body: some View {
         ZStack(alignment: .bottom){
             if(screen == 0){
-                HomeScreen()
+                HomeScreen().padding(.bottom, 64)
             }
             if(screen == 1){
-             LoginScreen()
+                LoginScreen().padding(.bottom, 64)
             }
             BottomNavigation(screen: $screen)
         }

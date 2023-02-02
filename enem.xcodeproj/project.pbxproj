@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D38B3971298B5E9600443B2A /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B3970298B5E9600443B2A /* HistoryScreen.swift */; };
 		D3DD93AE2988C4FA006D1DB0 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD93AD2988C4FA006D1DB0 /* MyColors.swift */; };
 		D3DEE2142989575D002E92E8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE2132989575D002E92E8 /* PrimaryButton.swift */; };
 		D3DEE2162989598A002E92E8 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE2152989598A002E92E8 /* SecondaryButton.swift */; };
@@ -17,6 +18,8 @@
 		D3DEE2202989AD92002E92E8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE21F2989AD92002E92E8 /* CheckBox.swift */; };
 		D3DEE2222989D198002E92E8 /* BottomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE2212989D198002E92E8 /* BottomNavigation.swift */; };
 		D3DEE224298A031E002E92E8 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEE223298A031E002E92E8 /* MainScreen.swift */; };
+		D3E24A91298A709B00C2381A /* QuestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E24A90298A709B00C2381A /* QuestionScreen.swift */; };
+		D3E24A93298A765200C2381A /* QuestionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E24A92298A765200C2381A /* QuestionCard.swift */; };
 		D3F9BEAB2988636500E20991 /* enemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9BEAA2988636500E20991 /* enemApp.swift */; };
 		D3F9BEAD2988636500E20991 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9BEAC2988636500E20991 /* ContentView.swift */; };
 		D3F9BEAF2988636500E20991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F9BEAE2988636500E20991 /* Assets.xcassets */; };
@@ -45,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D38B3970298B5E9600443B2A /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		D3DD93AD2988C4FA006D1DB0 /* MyColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
 		D3DEE2132989575D002E92E8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		D3DEE2152989598A002E92E8 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		D3DEE21F2989AD92002E92E8 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		D3DEE2212989D198002E92E8 /* BottomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigation.swift; sourceTree = "<group>"; };
 		D3DEE223298A031E002E92E8 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		D3E24A90298A709B00C2381A /* QuestionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScreen.swift; sourceTree = "<group>"; };
+		D3E24A92298A765200C2381A /* QuestionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCard.swift; sourceTree = "<group>"; };
 		D3F9BEA72988636500E20991 /* enem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F9BEAA2988636500E20991 /* enemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enemApp.swift; sourceTree = "<group>"; };
 		D3F9BEAC2988636500E20991 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 				D3DEE21D29898CB5002E92E8 /* AreaCard.swift */,
 				D3DEE21F2989AD92002E92E8 /* CheckBox.swift */,
 				D3DEE2212989D198002E92E8 /* BottomNavigation.swift */,
+				D3E24A92298A765200C2381A /* QuestionCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -174,6 +181,8 @@
 				D3DEE21729895B7A002E92E8 /* LoginScreen.swift */,
 				D3DEE21B29898A4D002E92E8 /* RegisterScreen.swift */,
 				D3DEE223298A031E002E92E8 /* MainScreen.swift */,
+				D3E24A90298A709B00C2381A /* QuestionScreen.swift */,
+				D38B3970298B5E9600443B2A /* HistoryScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -309,7 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38B3971298B5E9600443B2A /* HistoryScreen.swift in Sources */,
 				D3DEE2162989598A002E92E8 /* SecondaryButton.swift in Sources */,
+				D3E24A93298A765200C2381A /* QuestionCard.swift in Sources */,
 				D3F9BEAD2988636500E20991 /* ContentView.swift in Sources */,
 				D3DEE2222989D198002E92E8 /* BottomNavigation.swift in Sources */,
 				D3DD93AE2988C4FA006D1DB0 /* MyColors.swift in Sources */,
@@ -320,6 +331,7 @@
 				D3DEE2142989575D002E92E8 /* PrimaryButton.swift in Sources */,
 				D3DEE21829895B7A002E92E8 /* LoginScreen.swift in Sources */,
 				D3F9BEAB2988636500E20991 /* enemApp.swift in Sources */,
+				D3E24A91298A709B00C2381A /* QuestionScreen.swift in Sources */,
 				D3DEE21A29895BCF002E92E8 /* Logo.swift in Sources */,
 				D3F9BED729888D3500E20991 /* HomeScreen.swift in Sources */,
 			);
